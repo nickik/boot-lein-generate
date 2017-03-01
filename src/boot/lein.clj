@@ -15,6 +15,7 @@
                       (prop :license :license)
                       (prop :description :description)
                       [:repositories (core/get-env :repositories)
+                       :mirrors (core/get-env :mirrors)
                        :dependencies (core/get-env :dependencies)
                        :source-paths (into [] (core/get-env :source-paths))
                        :resource-paths (into [] (core/get-env :resource-paths))]))
